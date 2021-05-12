@@ -10,10 +10,12 @@ import (
 	"github.com/tebeka/selenium"
 )
 
+var seleniumPath string = getDriverPath()
+
 const (
 	//Set constants separately chromedriver.exe Address and local call port of
-	seleniumPath = DRIVERPATH
-	port         = 9515
+	// seleniumPath = DRIVERPATH
+	port = 9515
 )
 
 func main() {

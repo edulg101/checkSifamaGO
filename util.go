@@ -23,7 +23,9 @@ func reg(id string) string {
 
 func errorHandling(e error) {
 	if e != nil {
-		panic(e)
+		fmt.Println(e)
+		fmt.Scanf("%s")
+		os.Exit(1)
 	}
 }
 
@@ -54,7 +56,7 @@ func checkForMissingTros(tros [][]string, listaTrosEmOrdem []int) {
 		for _, v := range troFaltantes {
 			fmt.Println(v)
 		}
-		os.Exit(-1)
+		os.Exit(1)
 	}
 }
 

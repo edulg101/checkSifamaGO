@@ -7,7 +7,7 @@ import (
 )
 
 func getInfoFromExcel() [][]string {
-	f, err := excelize.OpenFile("D:\\sifamadocs\\planilha\\verificacao.xlsx")
+	f, err := excelize.OpenFile(SPREADSHEETPATH)
 	if err != nil {
 		fmt.Println(err)
 		return nil
