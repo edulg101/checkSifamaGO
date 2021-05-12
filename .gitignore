@@ -73,4 +73,9 @@ fabric.properties
 #specific
 target/*.jar
 
+#builds
+*.exe
+.vscode
+
+
 
